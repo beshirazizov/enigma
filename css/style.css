@@ -221,6 +221,7 @@ nav .navbar-brand img:hover {
   left: 0px;
   bottom: 30px;
   width: 100%;
+  z-index: 1000;
 }
 #intro-contacts a {
   text-decoration: none;
@@ -591,9 +592,11 @@ nav .navbar-brand img:hover {
   #footer .copy-w {
     line-height: 1.7;
   }
+  #projects .project-holder img{
+    object-fit: cover;
+  }
   .msdisimg{
-    height: 333px;
-    object-fit: contain;
+    object-fit: contain!important;
     background-color: #EAEEF0;
   }
   #contactus h5{
@@ -624,7 +627,7 @@ nav .navbar-brand img:hover {
     font-size: 15px;
   }
   #projects .left-lane{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   #projects .project-holder{
     margin-bottom: 40px;

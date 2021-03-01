@@ -1,7 +1,17 @@
+$(window).on('load', function () {
+    $('#preloader').fadeOut('slow', function () {
+        $(this).remove();
+    });
+});
 $(document).ready(function () {
 
     if ($(window).width() < 767.98) {
         $(".introanim-wrap").attr("data-rellax-speed","-7");
+        $('#projects .project-holder img').each(function() {
+            var width = $(this).width();
+            console.log(width)
+            $(this).css("height", width + "px");
+        });
     }
     var lazyLoadInstance = new LazyLoad();
     init_pointer();
@@ -87,11 +97,6 @@ $(document).ready(function () {
     // }, function () {
     //     window.clearInterval(imageChangingInterval);
     // });
-    $(window).on('load', function () {
-        $('#preloader').fadeOut('slow', function () {
-            $(this).remove();
-        });
-    });
 
     $('.input-item .form-control').focus(function () {
         $(this).prev().addClass("active");

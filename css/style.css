@@ -169,6 +169,7 @@ nav .navbar-brand img:hover {
 }
 #intro .textholder {
   height: 100vh;
+  min-height: 560px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -669,6 +670,11 @@ nav .navbar-brand img:hover {
   }
   #approach .approach-text h5{
     font-size: 27px;
+  }
+}
+@media (max-height: 560px) { 
+  #intro-contacts{
+    display: none!important;
   }
 }
 @media (max-width: 575.98px) { 
